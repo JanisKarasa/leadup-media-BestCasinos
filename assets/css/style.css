@@ -1,0 +1,183 @@
+:root {
+  --accent-color: #0df6c3;
+}
+
+body {
+  background-color: #100e1b !important;
+}
+
+p,
+ul {
+  margin: 0 !important;
+}
+
+.glow {
+  box-shadow: 0px 0px 5px 1px var(--accent-color);
+  -webkit-box-shadow: 0px 0px 15px 1px var(--accent-color);
+  -moz-box-shadow: 0px 0px 35px 1px var(--accent-color);
+}
+
+/* Navigation Section */
+
+.btn-custom {
+  background-color: var(--accent-color) !important;
+  margin-left: auto;
+  padding-inline: 2rem !important;
+}
+
+.btn-custom:hover {
+  color: white !important;
+}
+
+nav > img {
+  height: 38px;
+  border-radius: 0.375rem;
+  margin-left: 0.5rem;
+}
+
+/* Navigation Section End */
+
+/* HERO Section */
+.hero {
+  color: white;
+}
+.header-text-custom {
+  width: 70%;
+}
+/* HERO Section End */
+
+/* CARD Section */
+.card-item {
+  background-color: #131522;
+  border-radius: 5px;
+  padding-block: 1rem;
+}
+
+.card-logo-benefits-wrapper {
+  width: 60%;
+}
+
+.card-logo {
+  width: 45%;
+  padding: 5px;
+}
+
+.card-logo > img {
+  margin: 0 auto;
+}
+
+.card-bonus-text {
+  font-size: 1.2rem;
+}
+
+.card-bonus,
+.card-benefits,
+.card-play-now {
+  border-left: 1px solid #484848;
+}
+
+.card-bonus {
+  width: 55%;
+}
+
+.card-benefits {
+  width: 20%;
+}
+
+.card-benefits > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-benefits > ul > li {
+  padding-block: 0.3rem;
+}
+
+.card-benefits > ul i {
+  margin-right: 0.4rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: #131522;
+}
+
+.card-play-now {
+  width: 20%;
+}
+
+.play-now-btn-custom {
+  background-color: var(--accent-color) !important;
+  padding-inline: 1rem !important;
+}
+
+@media screen and (max-width: 991px) {
+  .card-bonus-text {
+    font-size: 0.9rem;
+  }
+  .card-benefits > ul {
+    margin-block: 2rem;
+  }
+  .card-benefits > ul > li {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-item {
+    width: 100%;
+    padding: 1rem;
+  }
+  .card-logo-benefits-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+  .card-logo {
+    padding: 0;
+    width: 45%;
+  }
+  .card-bonus,
+  .card-benefits,
+  .card-play-now {
+    width: 100%;
+    border: none;
+  }
+  .card-bonus {
+    width: auto;
+    margin: 0 auto;
+  }
+  .card-bonus-text {
+    font-size: 1rem;
+  }
+  .card-benefits > ul {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+  }
+  .card-benefits > ul > li {
+    background-color: #202337;
+    padding-inline: 0.4rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  .card-play-now > a {
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card-bonus-text {
+    font-size: 0.8rem;
+  }
+  .card-benefits > ul > li {
+    font-size: 0.65rem;
+  }
+}
+/* CARD Section End */
+
+/* FOOTER Section */
+.info-stats {
+  color: var(--accent-color);
+}
+/* FOOTER Section End */

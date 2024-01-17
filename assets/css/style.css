@@ -48,9 +48,47 @@ nav > img {
 
 /* CARD Section */
 .card-item {
+  position: relative;
   background-color: #131522;
   border-radius: 5px;
   padding-block: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trophy-icon {
+  width: 45px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-45%, -45%);
+}
+
+.top-icon {
+  font-size: .6rem;
+  /* font-weight: 700; */
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  /* border: 1px solid var(--accent-color); */
+  border-radius: 50%;
+  color: black;
+  background-color: var(--accent-color);
+  top: 0;
+  right: 0;
+  transform: translate(45%, -45%);
+}
+
+.card-item,
+.glow {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-item:hover,
+.glow:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px var(--accent-color);
 }
 
 .card-logo-benefits-wrapper {
